@@ -116,6 +116,7 @@ main .intro_slogan p {
   line-height: 30px;
 }
 
+/* card_sections */
 
 main .card_sections {
   min-height: 100vh;
@@ -159,7 +160,19 @@ main .card_sections .card p {
   color: #666666;
 }
 
+footer{
+  height: 90px;
+  background-color: #1A1A1A;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
 @media screen and (min-width: 768px) {
+
+  /* header media */
+
   header {
     height: 260px;
   }
@@ -195,7 +208,7 @@ main .card_sections .card p {
     font-size: 17px;
   }
 
-
+  /* intro_slogan section media */
   main .intro_slogan {
     height: 530px;
   }
@@ -209,10 +222,13 @@ main .card_sections .card p {
     max-width: 588px;
   }
 
+  /* card_sections media*/
   main .card_sections {
     height: 606px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  /* footer media */
 }
