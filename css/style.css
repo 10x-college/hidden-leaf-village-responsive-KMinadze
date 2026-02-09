@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  height: 200px;
+}
+
+header nav {
+  height: 100%;
+}
+
+header nav .navbar_brand {
+  height: 130px;
+  background-color: #ff6b1a;
+  padding-inline: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+header nav .navbar_brand .navbar_title {
+  display: flex;
+  gap: 10px;
+}
+
+header nav .navbar_brand .navbar_title img {
+  object-fit: contain;
+}
+
+header nav .navbar_brand .navbar_title span {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+header nav .navbar_brand span {
+  font-size: 14px;
+  opacity: 0.9;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+
+header nav .navbar_toggler {
+  height: 70px;
+  background-color: #1a1a1a;
+  padding-inline: 13px;
+  display: flex;
+  align-items: center;
+  padding-inline: 13px;
+}
+
+header nav .navbar_toggler .open_menu {
+  width: 103px;
+  height: 37px;
+  background-color: #ff6b1a;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+header nav .navbar_toggler .open_menu span {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+header nav .navbar_menu {
+  display: none;
+}
+
+
+/* intro_slogan section  */
+
+main {
+  min-height: 100vh;
+}
+
+main .intro_slogan {
+  height: 377px;
+  background-color: #2A2A2A;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/images/logo2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  opacity: 0.9;
+}
+
+main .intro_slogan h1 {
+  font-size: 24px;
+}
+
+main .intro_slogan p {
+  max-width: 326px;
+  text-align: center;
+  opacity: 0.9;
+  line-height: 30px;
+}
+
+/* card_sections */
+
+main .card_sections {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+main .card_sections .card {
+  width: 324px;
+  height: 200px;
+  border-radius: 12px;
+  border-top: 4px solid #FF6B1A;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 23px;
+  padding-inline: 24px;
+}
+
+main .card_sections .card .card_title {
+  display: flex;
+  gap: 5px;
+}
+
+main .card_sections .card .card_title img {
+  object-fit: contain;
+}
+
+main .card_sections .card .card_title h3 {
+  font-size: 24px;
+  color: #000000;
+}
+
+main .card_sections .card p {
+  max-width: 255px;
+  color: #666666;
+}
+
+footer{
+  height: 90px;
+  background-color: #1A1A1A;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+
+  /* header media */
+
+  header {
+    height: 260px;
+  }
+
+  header nav {
+    height: 100%;
+  }
+
+  header nav .navbar_brand {
+    height: 200px;
+    align-items: center;
+  }
+
+  header nav .navbar_toggler {
+    display: none;
+  }
+
+  header nav .navbar_menu {
+    display: block;
+    height: 60px;
+    background-color: #1a1a1a;
+  }
+
+  header nav .navbar_menu ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  header nav .navbar_menu ul li a {
+    font-size: 17px;
+  }
+
+  /* intro_slogan section media */
+  main .intro_slogan {
+    height: 530px;
+  }
+
+  main .intro_slogan h1 {
+    font-size: 40px;
+  }
+
+  main .intro_slogan p {
+    font-size: 18px;
+    max-width: 588px;
+  }
+
+  /* card_sections media*/
+  main .card_sections {
+    height: 606px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* footer media */
+}
